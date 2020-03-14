@@ -89,7 +89,6 @@ export default class App extends React.Component {
 
   handlePressImage = uri => {
     const { messages } = this.state;
-
     this.setState({
       messages: [createImageMessage(uri), ...messages],
     });

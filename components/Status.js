@@ -15,7 +15,7 @@ export default class Status extends React.Component {
     isConnected: true,
   };
 
-  async componentWillMount() {
+  async UNSAFE_componentWillMount() {
     NetInfo.isConnected.addEventListener(
       'connectionChange',
       this.handleChange,

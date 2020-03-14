@@ -39,7 +39,7 @@ export default class Toolbar extends React.Component {
     text: '',
   };
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (nextProps.isFocused !== this.props.isFocused) {
       if (nextProps.isFocused) {
         this.input.focus();
